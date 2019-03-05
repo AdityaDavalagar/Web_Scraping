@@ -23,7 +23,7 @@ for url in urls:
         item['link'] = container.a["href"]
         item['source'] = source.h2.text
         data.append(item) # add the item to the list
-        print(container.h2.text)
+        # print(container.h2.text)
 
 with open("C:/Users/ramky/Desktop/webscraping/multiple.json", "w") as writeJSON:
    json.dump(data, writeJSON, ensure_ascii=False)
