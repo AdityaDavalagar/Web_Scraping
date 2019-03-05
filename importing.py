@@ -2,7 +2,6 @@ from xlrd import open_workbook
 wb = open_workbook('excelsht.xlsx')
 values = []
 for s in wb.sheets():
-    #print 'Sheet:',s.name
     
     for row in range(s.nrows):
         col_value = []
